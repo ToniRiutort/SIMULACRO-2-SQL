@@ -12,6 +12,8 @@
 10. Muestra el año con la mayor cantidad de préstamos.
 ## Tablas
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/d241815a-e590-451f-875a-97d4716276cc)
+## Información de las tablas
+Esta en el archivo adjunto llamado biblioteca.sql
 ## Soluciones
 1. SELECT titulo FROM libros ORDER BY anio_publicacion ASC LIMIT 1;
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/dfe31080-166c-44f6-8799-10d15e2f8ffd)
