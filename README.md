@@ -28,6 +28,7 @@
 7. SELECT COUNT(autor), autor FROM libros GROUP BY autor ORDER BY COUNT(autor) DESC LIMIT 2; El limite 2 para demostrar que hay más de uno con el mismo valor.
 
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/711f9e29-6ff6-4ebb-976a-b5278f5d256d)
+
 8. SELECT titulo FROM libros INNER JOIN prestamos ON libros.id_libro = prestamos.id_libro GROUP BY prestamos.id_libro ORDER BY COUNT(prestamos.id_libro) DESC LIMIT 2; El limite 2 para demostrar que hay más de uno con el mismo valor.
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/7507d645-470b-4363-8e58-a94aa917913b)
 9. SELECT titulo FROM libros RIGHT JOIN prestamos ON libros.id_libro = prestamos.id_libro WHERE prestamos.fecha_prestamo = NULL;
