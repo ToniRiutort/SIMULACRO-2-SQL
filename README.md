@@ -23,8 +23,8 @@ Esta en el archivo adjunto llamado biblioteca.sql
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/2bda121f-5b03-4bdf-bdda-e204c775279e)
 4. SELECT autor, COUNT(prestamos.id_libro) FROM libros INNER JOIN prestamos ON libros.id_libro = prestamos.id_libro GROUP BY prestamos.id_libro HAVING COUNT(prestamos.id_libro)<3;
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/c56461d5-0682-477d-8f51-23991276c0cc)
-5. SELECT id_prestamo FROM prestamos WHERE fecha_prestamo = NULL;
-![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/26cabffb-91ea-47fb-aae3-bb2b222d8886)
+5. SELECT id_prestamo FROM prestamos WHERE fecha_prestamo IS NULL;
+![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/cc5d495c-f2d2-4394-ae03-e2a84824a6b8)
 6. SELECT titulo FROM libros INNER JOIN prestamos ON libros.id_libro = prestamos.id_libro WHERE prestamos.fecha_prestamo> NOW() - INTERVAL 1 MONTH;
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/6f07e13b-a5c6-4761-b230-77fe1c2e7a9d)
 7. SELECT COUNT(autor), autor FROM libros GROUP BY autor ORDER BY COUNT(autor) DESC LIMIT 2; El limite 2 para demostrar que hay más de uno con el mismo valor.
