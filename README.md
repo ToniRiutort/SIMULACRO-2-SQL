@@ -33,7 +33,7 @@ Esta en el archivo adjunto llamado biblioteca.sql
 
 8. SELECT titulo FROM libros INNER JOIN prestamos ON libros.id_libro = prestamos.id_libro GROUP BY prestamos.id_libro ORDER BY COUNT(prestamos.id_libro) DESC LIMIT 2; El limite 2 para demostrar que hay más de uno con el mismo valor.
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/7507d645-470b-4363-8e58-a94aa917913b)
-9. SELECT titulo FROM libros RIGHT JOIN prestamos ON libros.id_libro = prestamos.id_libro WHERE prestamos.fecha_prestamo = NULL;
-![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/b41df5a1-797b-408e-8277-b2d5688852fa)
+9. SELECT titulo FROM libros RIGHT JOIN prestamos ON libros.id_libro = prestamos.id_libro WHERE prestamos.fecha_prestamo IS NULL;
+![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/4c2e1568-9aba-47a2-a8bf-7665337570ba)
 10. SELECT COUNT(fecha_prestamo),YEAR(fecha_prestamo) FROM prestamos GROUP BY YEAR(fecha_prestamo) ORDER BY COUNT(fecha_prestamo) DESC LIMIT 1;
 ![image](https://github.com/ToniRiutort/SIMULACRO-2-SQL/assets/104781981/f620e628-776f-4272-a63f-39d4b0cb8a26)
