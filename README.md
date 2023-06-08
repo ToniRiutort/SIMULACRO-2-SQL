@@ -5,7 +5,7 @@
 3. Muestra el mes con el mayor número de préstamos.
 4. Muestra los autores cuyos libros se prestan en promedio menos de 3 veces.
 5. Muestra todos los préstamos que aún no han sido devueltos.
-6. Muestra el título de los libros que fueron prestados en el ñultimo mes.
+6. Muestra el título de los libros que fueron prestados en el ultimo mes.
 7. Muestra el autor que tiene más libros en la biblioteca.
 8. Muestra el título del libro que se ha prestado más veces.
 9. Muestra los libros que nunca se han prestado.
